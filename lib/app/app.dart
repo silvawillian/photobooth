@@ -43,12 +43,14 @@ class _App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'I/O Photo Booth',
+      title: 'Cabine de Fotos: Google I/O Extended Brasil',
       theme: theme,
       localizationsDelegates: [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
       ],
+      // ignore: lines_longer_than_80_chars
+      locale: AppLocalizations.supportedLocales.firstWhere((locale) => locale.languageCode.toLowerCase().contains('pt')),
       supportedLocales: AppLocalizations.supportedLocales,
       home: const LandingPage(),
     );
