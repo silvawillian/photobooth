@@ -20,6 +20,6 @@ jobs:
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PHOTOBOOTH_DEV }}"
-          projectId: io-photobooth-dev
+          projectId: photobooth-extended-io-b-e0a2b
           expires: 30d
           channelId: live
