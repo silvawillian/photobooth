@@ -46,6 +46,7 @@
   "functions": {
     "source": "functions",
     "runtime": "nodejs14",
+    "region": "southamerica-east1",
     "predeploy": [
       "npm --prefix ./functions run test",
       "npm --prefix ./functions run build"

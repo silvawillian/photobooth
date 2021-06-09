@@ -29,8 +29,8 @@ const BaseHTMLContext: Record<string, string | Record<string, string>> = {
   meta: {
     title: 'Google I/O Photo Booth',
     desc: (
-      'Take a photo in the I/O Photo Booth with your favorite Google Developer Mascots! ' +
-      'Built with Flutter & Firebase for Google I/O 2021.'
+      'Tire uma Foto na Cabine do I/O Extended com seus Google Developer Mascots favoritos! ' +
+      'Construido em Flutter & Firebase para Google I/O 2021.'
     ),
   },
   footer: footerTmpl,
@@ -147,7 +147,7 @@ export async function getShareResponse(
 /**
  * Public sharing function
  */
-export const shareImage = functions.https.onRequest(async (req, res) => {
+export const shareImage = functions.region('southamerica-east1').https.onRequest(async (req, res) => {
   const { status, send } = await getShareResponse(req);
   res.set('Access-Control-Allow-Origin', '*');
   res.status(status).send(send);
