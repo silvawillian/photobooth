@@ -56,7 +56,7 @@ class ShareUrls {
   final String twitterShareUrl;
 }
 
-const _shareUrl = 'https://photobooth-extended-io-b-e0a2b.web.app/share';
+const _shareUrl = 'https://photobooth.gdg.rocks/share';
 
 /// {@template photos_repository}
 /// Repository that persists photos in a Firebase Storage.
