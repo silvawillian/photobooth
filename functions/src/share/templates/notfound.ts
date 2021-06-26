@@ -36,8 +36,8 @@ export default `
         <img src="{{{assetUrls.notFoundPhoto}}}">
       </div>
       <div class="text">
-        <h1>Taken with I/O Photo Booth</h1>
-        <h2>Oops! This photo is gone, but that doesn't mean the fun has to end.</h2>
+        <h1>Tirada comh I/O Photo Booth</h1>
+        <h2>Oops! Esta foto não está mais aqui, mas isso não significa que a diversão precisa acabar.</h2>
         <a class="share-btn" href="/">Take your own</a>
       </div>
     </main>
