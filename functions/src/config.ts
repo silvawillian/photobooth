@@ -5,4 +5,5 @@ export const ALLOWED_HOSTS = [
   'localhost:5001',
   'photobooth-extended-io-b-e0a2b.web.app',
   'southamerica-east1-photobooth-extended-io-b-e0a2b.cloudfunctions.net',
+  'https://photobooth.gdg.rocks', 
 ];

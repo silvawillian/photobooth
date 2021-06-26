@@ -144,7 +144,7 @@ class MobileButtonsLayout extends StatelessWidget {
         const SizedBox(height: 20),
         ShareButton(image: image),
         const SizedBox(height: 20),
-        const GoToGoogleIOButton(),
+        // const GoToGoogleIOButton(),
       ],
     );
   }
@@ -159,8 +159,8 @@ class GoToGoogleIOButton extends StatelessWidget {
     final l10n = context.l10n;
     final theme = Theme.of(context);
     return ElevatedButton(
-      style: ElevatedButton.styleFrom(primary: PhotoboothColors.white),
-      onPressed: launchGoogleIOLink,
+      style: ElevatedButton.styleFrom(primary: PhotoboothColors.white,padding: EdgeInsets.symmetric(horizontal: 10)),
+      onPressed: launchGoogleIOExtendedLink,
       child: Text(
         l10n.goToGoogleIOButtonText,
         style: theme.textTheme.button?.copyWith(color: PhotoboothColors.black),
