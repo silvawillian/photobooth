@@ -124,7 +124,7 @@ class PhotoboothPreview extends StatelessWidget {
             size: _getAnimatedSpriteSize(character.asset.name),
             child: _AnimatedCharacter(name: character.asset.name),
           ),
-        CharactersIconLayout(children: children),
+        // CharactersIconLayout(children: children),
         Align(
           alignment: Alignment.bottomCenter,
           child: Padding(

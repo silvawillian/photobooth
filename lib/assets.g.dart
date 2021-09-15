@@ -28,17 +28,17 @@ class Assets {
     Asset(
       name: '01_google_v1',
       path: 'assets/props/google/01_google_v1.png',
-      size: Size(847, 697),
+      size: Size(618, 618),
     ),
     Asset(
       name: '02_google_v1',
       path: 'assets/props/google/02_google_v1.png',
-      size: Size(349, 682),
+      size: Size(618, 618),
     ),
     Asset(
       name: '03_google_V1',
-      path: 'assets/props/google/03_google_V1.png',
-      size: Size(640, 595),
+      path: 'assets/props/google/03_google_v1.png',
+      size: Size(618, 618),
     ),
     Asset(
       name: '04_google_v1',

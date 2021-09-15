@@ -107,20 +107,20 @@ class _StickerReminderText extends StatelessWidget {
   const _StickerReminderText({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    final shouldDisplayPropsReminder = context.select(
-      (StickersBloc bloc) => bloc.state.shouldDisplayPropsReminder,
-    );
+    // final shouldDisplayPropsReminder = context.select(
+    //   (StickersBloc bloc) => bloc.state.shouldDisplayPropsReminder,
+    // );
 
-    if (!shouldDisplayPropsReminder) return const SizedBox();
-
-    return Container(
-      margin: const EdgeInsets.only(bottom: 125),
-      child: AppTooltip.custom(
-        key: const Key('stickersPage_propsReminder_appTooltip'),
-        visible: true,
-        message: context.l10n.propsReminderText,
-      ),
-    );
+    // if (!shouldDisplayPropsReminder) return const SizedBox();
+    return const SizedBox();
+    // return Container(
+    //   margin: const EdgeInsets.only(bottom: 125),
+    //   child: AppTooltip.custom(
+    //     key: const Key('stickersPage_propsReminder_appTooltip'),
+    //     visible: true,
+    //     message: context.l10n.propsReminderText,
+    //   ),
+    // );
   }
 }
 
@@ -364,9 +364,8 @@ class _NextConfirmationDialogContent extends StatelessWidget {
                 children: [
                   OutlinedButton(
                     style: OutlinedButton.styleFrom(
-                      side: const BorderSide(color: PhotoboothColors.black),
-                      padding: EdgeInsets.symmetric(horizontal: 10)
-                    ),
+                        side: const BorderSide(color: PhotoboothColors.black),
+                        padding: EdgeInsets.symmetric(horizontal: 10)),
                     onPressed: () => Navigator.of(context).pop(false),
                     child: Text(
                       l10n.stickersNextConfirmationCancelButtonText,

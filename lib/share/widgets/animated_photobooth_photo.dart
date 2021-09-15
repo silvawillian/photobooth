@@ -76,7 +76,7 @@ class AnimatedPhotoboothPhotoLandscape extends StatelessWidget {
     sprites: Sprites(
       asset: 'photo_frame_spritesheet_landscape.jpg',
       size: Size(1308, 1038),
-      frames: 19,
+      frames: 1,
       stepTime: 2 / 19,
     ),
     showLoadingIndicator: false,
